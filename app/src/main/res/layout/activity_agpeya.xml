@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:background="@color/background">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="horizontal" android:padding="12dp" android:gravity="center_vertical">
+        <Button android:id="@+id/agpeyaPrevButton"
+            android:layout_width="0dp" android:layout_height="48dp"
+            android:layout_weight="1" android:text="&#9664;"
+            android:textSize="18sp" android:backgroundTint="@color/gold_dark"
+            android:textColor="@color/background" android:layout_marginEnd="4dp" />
+        <Button android:id="@+id/agpeyaNowButton"
+            android:layout_width="0dp" android:layout_height="48dp"
+            android:layout_weight="2" android:text="Current Hour"
+            android:textSize="14sp" android:backgroundTint="@color/gold"
+            android:textColor="@color/background"
+            android:layout_marginStart="4dp" android:layout_marginEnd="4dp" />
+        <Button android:id="@+id/agpeyaNextButton"
+            android:layout_width="0dp" android:layout_height="48dp"
+            android:layout_weight="1" android:text="&#9654;"
+            android:textSize="18sp" android:backgroundTint="@color/gold_dark"
+            android:textColor="@color/background" android:layout_marginStart="4dp" />
+    </LinearLayout>
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp"
+        android:layout_weight="1" android:padding="16dp">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView android:id="@+id/agpeyaHourName"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:textSize="24sp" android:textColor="@color/gold"
+                android:textStyle="bold" android:gravity="center"
+                android:layout_marginBottom="4dp" />
+            <TextView android:id="@+id/agpeyaHourTime"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:textSize="14sp" android:textColor="@color/text_secondary"
+                android:gravity="center" android:layout_marginBottom="24dp" />
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="INTRODUCTION &amp; PSALM 51 (NIV)" android:textSize="12sp"
+                android:textColor="@color/gold" android:textStyle="bold"
+                android:letterSpacing="0.15" android:layout_marginBottom="8dp" />
+            <TextView android:id="@+id/agpeyaOpening"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:textSize="15sp" android:textColor="@color/text_primary"
+                android:lineSpacingExtra="4dp" android:layout_marginBottom="24dp" />
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="PSALMS (NIV)" android:textSize="12sp"
+                android:textColor="@color/gold" android:textStyle="bold"
+                android:letterSpacing="0.15" android:layout_marginBottom="8dp" />
+            <TextView android:id="@+id/agpeyaPsalms"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:textSize="15sp" android:textColor="@color/text_primary"
+                android:lineSpacingExtra="4dp" android:layout_marginBottom="24dp" />
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="HOLY GOSPEL (NIV)" android:textSize="12sp"
+                android:textColor="@color/gold" android:textStyle="bold"
+                android:letterSpacing="0.15" android:layout_marginBottom="8dp" />
+            <TextView android:id="@+id/agpeyaGospel"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:textSize="15sp" android:textColor="@color/text_primary"
+                android:lineSpacingExtra="4dp" android:layout_marginBottom="24dp" />
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="CLOSING PRAYERS" android:textSize="12sp"
+                android:textColor="@color/gold" android:textStyle="bold"
+                android:letterSpacing="0.15" android:layout_marginBottom="8dp" />
+            <TextView android:id="@+id/agpeyaClosing"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:textSize="15sp" android:textColor="@color/text_primary"
+                android:lineSpacingExtra="4dp" android:layout_marginBottom="32dp" />
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="Psalms according to the Septuagint (LXX) numbering. Gospel readings from the NKJV. Structure follows the Coptic Orthodox Agpeya. Tap any gold reference to open it in Bible.com."
+                android:textSize="11sp" android:textColor="@color/text_secondary"
+                android:textStyle="italic" android:gravity="center" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

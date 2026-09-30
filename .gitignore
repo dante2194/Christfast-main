@@ -1,0 +1,20 @@
+*.iml
+.gradle
+/local.properties
+/.idea
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+
+# Editor / patch backups
+*.bak
+*.bak[0-9]*
+*.orig
+*.rej
+*.swp
+*~
+*.tmp
+*.save
